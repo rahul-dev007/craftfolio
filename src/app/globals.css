@@ -1,26 +1,21 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+/* Section Divider CSS */
+.section-divider {
+  position: relative;
+  background-color: #111827; /* Skills সেকশনের bg-gray-900 এর রঙ */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.section-divider::before {
+  content: '';
+  position: absolute;
+  top: -50px; /* কার্ভের উচ্চতা */
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #1F2937; /* Hero সেকশনের bg-gray-800 এর রঙ */
+  clip-path: polygon(0 100%, 100% 0, 100% 100%); /* একটি অ্যাঙ্গেল তৈরি করবে */
 }
