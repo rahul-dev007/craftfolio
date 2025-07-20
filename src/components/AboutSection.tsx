@@ -33,6 +33,7 @@ const AboutSection = () => {
             </p>
           </motion.div>
 
+
           {/* Left side: Image */}
           <motion.div
             className="md:w-1/3 flex justify-center"
@@ -41,20 +42,18 @@ const AboutSection = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="w-60 h-60 relative group">
-            
-
-            <Image
-              src="/profile.jpg"
-              alt="Profile"
-              width={300}
-              height={300}
-              priority
-            />
-
-              <div className="absolute inset-0 bg-black/30 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="relative w-40 h-40 sm:w-52 sm:h-52 md:w-60 md:h-60 rounded-2xl overflow-hidden group shadow-lg border-4 border-teal-400">
+              <Image
+                src="/profile.jpg"
+                alt="Profile"
+                fill
+                className="object-cover rounded-2xl"
+                priority
+              />
+              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl" />
             </div>
           </motion.div>
+
         </div>
       </div>
     </section>
