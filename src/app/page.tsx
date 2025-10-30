@@ -14,14 +14,43 @@ import UploadPDFWidget from "@/components/UploadPDFWidget";
 export default function HomePage() {
   return (
     <main className="bg-gradient-to-b from-gray-900 to-gray-800 text-white">
-      <HeroSection />
-      <UploadPDFWidget />
-      <ChatWidget />
-      <AboutSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <ContactSection />
+      {/* Hero Section */}
+      <section id="hero">
+        <HeroSection />
+      </section>
+
+      {/* Upload PDF Widget */}
+      <section id="upload">
+        <UploadPDFWidget />
+      </section>
+
+      {/* Chat Section */}
+      <section id="chat">
+        <ChatWidget />
+      </section>
+
+      {/* About Section */}
+      <section id="about">
+        <AboutSection />
+      </section>
+
+      {/* Skills Section */}
+      <section id="skills">
+        <SkillsSection />
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects">
+        <ProjectsSection />
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact">
+        <ContactSection />
+      </section>
+
       <Footer />
     </main>
   );
 }
+
