@@ -6,11 +6,17 @@ import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import ChatWidget from "@/components/ChatWidget";
+import UploadPDFWidget from "@/components/UploadPDFWidget";
+
+
 
 export default function HomePage() {
   return (
     <main className="bg-gradient-to-b from-gray-900 to-gray-800 text-white">
       <HeroSection />
+      <UploadPDFWidget />
+      <ChatWidget />
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />

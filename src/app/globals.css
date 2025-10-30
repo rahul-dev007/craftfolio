@@ -19,3 +19,12 @@
   background-color: #1F2937; /* Hero সেকশনের bg-gray-800 এর রঙ */
   clip-path: polygon(0 100%, 100% 0, 100% 100%); /* একটি অ্যাঙ্গেল তৈরি করবে */
 }
+
+
+
+/* Additional global styles can be added here */
+.dot{display:inline-block;height:6px;width:6px;border-radius:9999px;background:#94a3b8;animation:blink 1.2s infinite}
+.dot2{animation-delay:.15s}.dot3{animation-delay:.3s}
+@keyframes blink{0%,80%,100%{opacity:.25}40%{opacity:1}}
+/* prevent scroll chaining / bounce to window */
+.overscroll-contain{overscroll-behavior:contain}
